@@ -1,0 +1,48 @@
+{
+  "name": "qa-interview-task",
+  "version": "1.0.0",
+  "description": "Playwright TypeScript automation foundation for API and E2E testing of a public contact management demo app.",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:api": "playwright test --project=api",
+    "test:e2e": "playwright test --project=chromium",
+    "test:e2e:headed": "playwright test --project=chromium --headed",
+    "report": "playwright show-report",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint .",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VadymMaidaniuk/qa-interview-task.git"
+  },
+  "keywords": [
+    "playwright",
+    "qa-automation",
+    "typescript",
+    "api-testing",
+    "e2e-testing"
+  ],
+  "author": "",
+  "license": "MIT",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/VadymMaidaniuk/qa-interview-task/issues"
+  },
+  "homepage": "https://github.com/VadymMaidaniuk/qa-interview-task#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0",
+    "dotenv": "^17.4.2",
+    "eslint": "^10.2.0",
+    "prettier": "^3.8.3",
+    "typescript": "^6.0.2",
+    "typescript-eslint": "^8.58.2",
+    "zod": "^4.3.6"
+  }
+}
